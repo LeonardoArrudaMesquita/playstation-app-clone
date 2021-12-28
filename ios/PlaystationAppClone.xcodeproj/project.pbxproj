@@ -91,7 +91,6 @@
 				D5E018F73F691937D586BE04 /* Pods-PlaystationAppClone-PlaystationAppCloneTests.debug.xcconfig */,
 				AAA4DE9DC34385C24122B3C8 /* Pods-PlaystationAppClone-PlaystationAppCloneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
