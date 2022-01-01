@@ -12,7 +12,8 @@ export default function Button({ title, backgroundColor }: Props) {
   return (
     <TouchableOpacity
       style={[styles.container, { backgroundColor }]}
-      activeOpacity={1}>
+      activeOpacity={1}
+    >
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
