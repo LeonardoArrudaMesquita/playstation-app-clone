@@ -7,10 +7,15 @@
  */
 
 import React from 'react';
-import { RoutesContainer } from './src/routes';
+import { SafeAreaView, View } from 'react-native';
+import { Routes } from './src/routes';
 
 const App: () => JSX.Element = () => {
-  return <RoutesContainer />;
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <Routes />
+    </SafeAreaView>
+  );
 };
 
 export default App;

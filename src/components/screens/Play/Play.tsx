@@ -1,15 +1,14 @@
-import { useNavigation } from '@react-navigation/native';
-import React, { useLayoutEffect } from 'react';
-import { Text } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import { theme } from '../../../global/styles/theme';
+import { Background, Button } from '../../atoms';
 
 export function Play() {
-  const navigation = useNavigation();
-
-  useLayoutEffect(() => {
-    navigation.setOptions(() => {
-      title: 'No title';
-    });
-  }, [navigation]);
-
-  return <Text>Play</Text>;
+  return (
+    <Background>
+      <View style={{ paddingHorizontal: 20 }}>
+        <Button title="Exibir Jogo" backgroundColor={theme.colors.grey1} />
+      </View>
+    </Background>
+  );
 }

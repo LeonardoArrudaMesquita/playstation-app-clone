@@ -10,36 +10,20 @@ import {
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-export function Routes() {
-  const Tab = createBottomTabNavigator();
+export function AppRoutes() {
+  const { Navigator, Screen } = createBottomTabNavigator();
 
   return (
-    <Tab.Navigator>
-      <Tab.Screen
-        name="Play"
-        component={Play}
-        options={{ headerShown: false }}
-      />
-      <Tab.Screen
-        name="Explore"
-        component={Explore}
-        options={{ headerShown: false }}
-      />
-      <Tab.Screen
-        name="Store"
-        component={Store}
-        options={{ headerShown: false }}
-      />
-      <Tab.Screen
-        name="GameLibrary"
-        component={GameLibrary}
-        options={{ headerShown: false }}
-      />
-      <Tab.Screen
-        name="Search"
-        component={Search}
-        options={{ headerShown: false }}
-      />
-    </Tab.Navigator>
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Screen name="Jogar" component={Play} />
+      <Screen name="Explorar" component={Explore} />
+      <Screen name="PS Store" component={Store} />
+      <Screen name="Biblioteca de jogos" component={GameLibrary} />
+      <Screen name="Pesquisar" component={Search} />
+    </Navigator>
   );
 }

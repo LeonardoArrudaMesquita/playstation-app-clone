@@ -8,7 +8,7 @@ export type Props = {
   backgroundColor: ColorValue;
 };
 
-export default function Button({ title, backgroundColor }: Props) {
+export function Button({ title, backgroundColor }: Props) {
   return (
     <TouchableOpacity
       style={[styles.container, { backgroundColor }]}
